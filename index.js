@@ -1,8 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-
 import breakpoints from 'breakpoints-json';
-
-import Styles from './styles';
 
 export default class SmartRender extends Component {
     static propTypes = {
