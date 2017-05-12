@@ -1,0 +1,27 @@
+{
+  "name": "smartRender",
+  "version": "1.0.12",
+  "description": "Conditional rendered React component",
+  "main": "index.json",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Lectrum/SmartRender.git"
+  },
+  "keywords": [
+    "react",
+    "conditional-render",
+    "breakpoints-json",
+    "media-queries",
+    "screen-sizes",
+    "viewport"
+  ],
+  "author": "m.melnychenko <m.melnychenko@lectrum.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lectrum/SmartRender/issues"
+  },
+  "homepage": "https://github.com/Lectrum/SmartRender/blob/master/README.md"
+}
