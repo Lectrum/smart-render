@@ -1,32 +1,30 @@
-# Boilerplate for creating React Npm packages with ES2015
+# SmartRender
 
-The package is based on [npm-base](https://github.com/kadirahq/npm-base) package by [Kadira](https://github.com/kadirahq) which is really great when you want to prepare Npm package. This one is prepared to be used as a starter point for React components which needs to be published on Npm.
+## Installation
 
-It includes linting with [ESLint](http://eslint.org/) and testing with [Mocha](https://mochajs.org/), [Enzyme](http://airbnb.io/enzyme/) and [JSDOM](https://github.com/tmpvar/jsdom).
+You can install `SmartRender` using npm:
 
-Also there is of course ES6 transpilation.
+`npm install -D smart-render`
+
+We use `-D` flag which is the same as `--save-dev`. In this case, the package will appear in your devDependencies. It is a right way because you only need to use it during local development.
+
+This package depends on 'breakpoints-json' and 'react' packages.
 
 ## Usage
 
-1. Clone this repo
-2. Inside cloned repo run `npm install && rm -rf .git && git init` and update `package.json` with your package name.
-3. If you want to run tests: `npm test` or `npm run testonly` or `npm run test-watch`. You need to write tests in `__tests__` folder. You need at least Node 4 on your machine to run tests.
-4. If you want to run linting: `npm test` or `npm run lint`. Fix bugs: `npm run lint-fix`. You can adjust your `.eslintrc` config file.
-5. If you want to run transpilation to ES5 in `dist` folder: `npm run prepublish` (standard npm hook).
+SmartRender is a wrapper for your components that should be visible on certain breakpoints and not visible on another.
+You should write breakpoints name to `breakpoints` props to render component only on necessary devices.
+In example below `Avatar` component should be rendered only on mobile devices.
 
-## CSS and preprocessors
+```JSX
+import SmartRender from 'smart-render';
 
-For more information check out this thread: [#5](https://github.com/juliancwirko/react-npm-boilerplate/issues/5)
+const AppBar = () => {
+    <SmartRender breakpoints = 'phonePortrait phoneLandscape' >
+        <Avatar icon = 'person' />
+    </SmartRender>
+};
+```
 
-## Blog post about it:
 
-- [Creating React NPM packages with ES2015](http://julian.io/creating-react-npm-packages-with-es2015/)
 
-## Also check out
-
-- [React Alert UI component](https://github.com/juliancwirko/react-s-alert)
-- [React project boilerplate with Webpack, HMR, React Router](https://github.com/juliancwirko/react-boilerplate)
-
-## License
-
-MIT
