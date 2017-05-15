@@ -1,5 +1,8 @@
 # SmartRender
 
+SmartRender is a wrapper for your components that should be visible on certain breakpoints and not visible on another.
+This approach is better than writing `display: none;` in CSS. If you use this component HTML element that should be not rendered - will not be in the DOM, in contrast to CSS `display: none;` rule (in this case HTML element will be presented in the DOM, but just not show).
+
 ## Installation
 
 You can install `SmartRender` using npm:
@@ -12,10 +15,8 @@ This package depends on [`breakpoints-json`](https://www.npmjs.com/package/break
 
 ## Usage
 
-SmartRender is a wrapper for your components that should be visible on certain breakpoints and not visible on another.
 You should write breakpoints name to `breakpoints` props to render component only on necessary devices.
 In example below `Avatar` component should be rendered only on mobile devices.
-This approach is better than writing `display: none;` in CSS. If you use this component HTML element that should be not rendered - will not be in the DOM, in contrast to CSS `display: none;` rule (in this case HTML element will be presented in the DOM, but just not show).
 
 ```js
 import SmartRender from 'smart-render';
