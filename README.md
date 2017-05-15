@@ -16,7 +16,7 @@ SmartRender is a wrapper for your components that should be visible on certain b
 You should write breakpoints name to `breakpoints` props to render component only on necessary devices.
 In example below `Avatar` component should be rendered only on mobile devices.
 
-```JSX
+```js
 import SmartRender from 'smart-render';
 
 const AppBar = () => {
@@ -26,5 +26,6 @@ const AppBar = () => {
 };
 ```
 
+## License
 
-
+This project is licensed under the terms of the [MIT license](https://github.com/Lectrum/smart-render/blob/master/LICENSE).
