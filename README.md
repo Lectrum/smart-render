@@ -8,7 +8,7 @@ You can install `SmartRender` using npm:
 
 We use `-D` flag which is the same as `--save-dev`. In this case, the package will appear in your devDependencies. It is a right way because you only need to use it during local development.
 
-This package depends on 'breakpoints-json'.
+This package depends on [`breakpoints-json`](https://www.npmjs.com/package/breakpoints-json).
 
 ## Usage
 
