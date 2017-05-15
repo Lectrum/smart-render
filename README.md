@@ -1,5 +1,7 @@
 # SmartRender
 
+[![Join the chat at https://gitter.im/lectrum/smart-render](https://badges.gitter.im/lectrum/smart-render.svg)](https://gitter.im/lectrum/smart-render?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 SmartRender is a wrapper for your components that should be visible on certain breakpoints and not visible on another.
 This approach is better than writing `display: none;` in CSS. If you use this component HTML element that should be not rendered - will not be in the DOM, in contrast to CSS `display: none;` rule (in this case HTML element will be presented in the DOM, but just not show).
 
