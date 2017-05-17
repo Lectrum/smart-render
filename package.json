@@ -1,6 +1,6 @@
 {
   "name": "smart-render",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Conditional rendered React component",
   "main": "index.js",
   "repository": {
