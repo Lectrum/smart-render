@@ -16,7 +16,7 @@ This approach is better than writing `display: none;` in CSS. If you use this pa
 
 You can install `SmartRender` using npm:
 
-`npm install -D smart-render`
+`npm install smart-render --production -D`
 
 We use `-D` flag which is the same as `--save-dev`. In this case, the package will appear in your devDependencies. It is a right way because you only need to use it during local development.
 
