@@ -24,9 +24,9 @@
     "screen-sizes"
   ],
   "scripts": {
-    "prepublish": "babel --plugins transform-es2015-modules-umd src --ignore __tests__ --out-dir ./dist",
-    "lint": "eslint ./src",
-    "lintfix": "eslint ./src --fix"
+    "prepublish": "babel --plugins transform-es2015-modules-umd lib --ignore __tests__ --out-file index.js",
+    "lint": "eslint ./lib",
+    "lintfix": "eslint ./lib --fix"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
