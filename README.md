@@ -16,9 +16,7 @@ This approach is better than writing `display: none;` in CSS. If you use this pa
 
 You can install `SmartRender` using npm:
 
-`npm install smart-render --production -D`
-
-We use `-D` flag which is the same as `--save-dev`. In this case, the package will appear in your devDependencies. It is a right way because you only need to use it during local development.
+`npm install smart-render --production`
 
 This package depends on [breakpoints-json](https://www.npmjs.com/package/breakpoints-json). It is a JSON formatted breakpoints, which correspond to popular modern devices.
 
@@ -28,13 +26,16 @@ You should write breakpoints name to `breakpoints` props to render component onl
 In example below `Avatar` component should be rendered only on mobile devices.
 
 ```js
+import React, { Component } from 'react';
 import SmartRender from 'smart-render';
 
-const AppBar = () => {
-    <SmartRender breakpoints = 'phonePortrait phoneLandscape' >
-        <Avatar icon = 'person' />
-    </SmartRender>
-};
+export default class AppBar extends Component {
+    render () {
+        <SmartRender breakpoints = 'phonePortrait phoneLandscape' >
+            <Avatar icon = 'person' />
+        </SmartRender>
+    };
+}
 ```
 
 ## Afterwords
