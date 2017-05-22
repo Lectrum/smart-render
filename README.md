@@ -16,7 +16,11 @@ This approach is better than writing `display: none;` in CSS. If you use this pa
 
 You can install `SmartRender` using npm:
 
-`npm install smart-render --production`
+`npm install --save --production smart-render`
+
+or using Yarn:
+
+`yarn add smart-render`
 
 This package depends on [breakpoints-json](https://www.npmjs.com/package/breakpoints-json). It is a JSON formatted breakpoints, which correspond to popular modern devices.
 
