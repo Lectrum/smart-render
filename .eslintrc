@@ -1,51 +1,316 @@
-{
-    "parser": "babel-eslint",
-    "env": {
-        "browser": true,
-        "node": true,
-        "es6": true
-    },
-    "ecmaFeatures": {
-        "modules": true
-    },
-    "rules": {
-        "no-bitwise": 2,
-        "no-else-return": 2,
-        "no-eq-null": 2,
-        "no-extra-parens": 0,
-        "no-floating-decimal": 2,
-        "no-inner-declarations": [2, "both"],
-        "no-lonely-if": 2,
-        "no-multiple-empty-lines": [2, {"max": 3}],
-        "no-self-compare": 2,
-        "no-underscore-dangle": 0,
-        "no-use-before-define": 0,
-        "no-unused-expressions": 0,
-        "no-void": 2,
-        "brace-style": [2, "1tbs"],
-        "camelcase": [1, {"properties": "never"}],
-        "consistent-return": 0,
-        "comma-style": [2, "last"],
-        "complexity": [1, 12],
-        "func-names": 0,
-        "guard-for-in": 2,
-        "indent": [2, 4],
-        "max-len": [0, 120, 4],
-        "new-cap": [2, {"newIsCap": true, "capIsNew": false}],
-        "quotes": [2, "single"],
-        "keyword-spacing": [2, {"before": true, "after": true}],
-        "space-before-blocks": [2, "always"],
-        "array-bracket-spacing": [2, "never"],
-        "space-in-parens": [2, "never"],
-        "strict": [0],
-        "valid-jsdoc": 2,
-        "wrap-iife": [2, "any"],
-        "yoda": [1, "never"]
-    },
-    "plugins": [
-        "react"
-    ],
-    "globals": {
+parser:
+    babel-eslint
 
-    }
-}
+settings:
+    ecmascript: 6
+
+plugins:
+    - react
+
+ecmaFeatures:
+    jsx: true
+    modules: true
+    destructuring: true
+    classes: true
+    forOf: true
+    blockBindings: true
+    arrowFunctions: true
+
+env:
+    browser: true
+    jest: true
+    es6: true
+
+rules:
+    no-cond-assign: 2
+    no-console: 2
+    no-constant-condition: 2
+    no-control-regex: 2
+    no-debugger: 2
+    no-dupe-args: 2
+    no-dupe-keys: 2
+    no-duplicate-case: 2
+    no-empty-character-class: 2
+    no-empty: 2
+    no-ex-assign: 2
+    no-extra-boolean-cast: 2
+    no-extra-parens: [2, "all", { ignoreJSX: "all" }]
+    no-extra-semi: 2
+    no-func-assign: 2
+    no-inner-declarations: 2
+    no-invalid-regexp: 2
+    no-irregular-whitespace: 2
+    no-obj-calls: 2
+    no-prototype-builtins: 2
+    no-regex-spaces: 2
+    no-sparse-arrays: 2
+    no-template-curly-in-string: 2
+    no-unexpected-multiline: 2
+    no-unreachable: 2
+    no-unsafe-finally: 2
+    no-unsafe-negation: 2
+    use-isnan: 2
+    valid-jsdoc: 2
+    valid-typeof: 2
+    accessor-pairs: 2
+    array-callback-return: 2
+    block-scoped-var: 2
+    complexity: 2
+    consistent-return: 0
+    curly: 2
+    default-case: 2
+    dot-notation: 2
+    eqeqeq: 2
+    guard-for-in: 2
+    no-alert: 2
+    no-caller: 2
+    no-case-declarations: 2
+    no-div-regex: 2
+    no-else-return: 2
+    no-empty-function: 2
+    no-empty-pattern: 2
+    no-eq-null: 2
+    no-eval: 2
+    no-extend-native: 2
+    no-extra-bind: 2
+    no-extra-label: 2
+    no-fallthrough: 2
+    no-floating-decimal: 2
+    no-global-assign: 2
+    no-implicit-coercion: 2
+    no-implicit-globals: 2
+    no-implied-eval: 2
+    no-invalid-this: 2
+    no-iterator: 2
+    no-labels: 2
+    no-lone-blocks: 2
+    no-loop-func: 2
+    no-magic-numbers: 0
+    no-multi-spaces: [2, { exceptions: { "VariableDeclarator": true } }]
+    no-multi-str: 2
+    no-new-func: 2
+    no-new-wrappers: 2
+    no-new: 2
+    no-octal-escape: 2
+    no-octal: 2
+    no-param-reassign: 2
+    no-proto: 2
+    no-redeclare: 2
+    no-restricted-properties: 2
+    no-return-assign: 2
+    no-return-await: 2
+    no-script-url: 2
+    no-self-assign: 2
+    no-self-compare: 2
+    no-sequences: 2
+    no-throw-literal: 2
+    no-unmodified-loop-condition: 2
+    no-unused-expressions: [1, { "allowTernary": true }]
+    no-unused-labels: 2
+    no-useless-call: 2
+    no-useless-concat: 2
+    no-useless-escape: 2
+    no-useless-return: 2
+    no-void: 2
+    no-warning-comments: 0
+    no-with: 2
+    radix: 2
+    require-await: 2
+    wrap-iife: 2
+    yoda: 2
+    strict: 2
+    init-declarations: 2
+    no-catch-shadow: 2
+    no-delete-var: 2
+    no-label-var: 2
+    no-restricted-globals: 2
+    no-shadow-restricted-names: 2
+    no-shadow: 2
+    no-undef-init: 2
+    no-undef: 2
+    no-undefined: 0
+    no-unused-vars: 2
+    no-use-before-define: 2
+    array-bracket-spacing: 1
+    block-spacing: 1
+    brace-style: 1
+    camelcase: 1
+    capitalized-comments: 0
+    comma-dangle: 1
+    comma-spacing: 1
+    comma-style: 1
+    computed-property-spacing: 1
+    consistent-this: 1
+    eol-last: [1, "always"]
+    func-call-spacing: 1
+    func-name-matching: 1
+    func-names: 1
+    func-style: ["error", "declaration", { "allowArrowFunctions": true }]
+    id-blacklist: 1
+    indent: [1, 4, {"SwitchCase": 1}]
+    jsx-quotes: [1, "prefer-single"]
+    key-spacing: [1, { "align": "value", mode: "strict" }]
+    keyword-spacing: 1
+    linebreak-style: 1
+    lines-around-comment: 1
+    max-depth: 1
+    max-len: [1, 100, { "ignoreComments": true, "ignoreTemplateLiterals": true }]
+    max-nested-callbacks: 1
+    max-params: [1, 4]
+    max-statements-per-line: 1
+    new-cap: 1
+    new-parens: 1
+    newline-after-var: 1
+    newline-before-return: 1
+    newline-per-chained-call: 1
+    no-array-constructor: 1
+    no-bitwise: 1
+    no-continue: 1
+    no-inline-comments: 0
+    no-lonely-if: 1
+    no-mixed-operators: 1
+    no-mixed-spaces-and-tabs: 1
+    no-multiple-empty-lines: [1, { "max": 2, "maxEOF": 0 }]
+    nj-negated-condition: 0
+    no-nested-ternary: 0
+    no-new-object: 1
+    no-plusplus: [1, { "allowForLoopAfterthoughts": true }]
+    no-restricted-syntax: 1
+    no-tabs: 1
+    no-trailing-spaces: 1
+    no-unneeded-ternary: 1
+    no-whitespace-before-property: 1
+    object-curly-spacing: [1, "always", { "arraysInObjects": false, "objectsInObjects": false }]
+    object-property-newline: [1, { "allowMultiplePropertiesPerLine": true }]
+    one-var: [1, "never"]
+    operator-assignment: 1
+    quotes: [1, "single", { "allowTemplateLiterals": true }]
+    semi-spacing: 1
+    semi: 1
+    space-before-blocks: 1
+    space-before-function-paren: 1
+    space-in-parens: 1
+    space-unary-ops: 1
+    spaced-comment: [0, "always"]
+    wrap-regex: 1
+    arrow-body-style: [1, "as-needed", { "requireReturnForObjectLiteral": false }]
+    arrow-parens: [1, "always"]
+    arrow-spacing: 1
+    constructor-super: 1
+    generator-star-spacing: ["error", {"before": false, "after": true}]
+    no-class-assign: 1
+    no-confusing-arrow: 0
+    no-const-assign: 1
+    no-dupe-class-members: 1
+    no-duplicate-imports: 1
+    no-new-symbol: 1
+    no-this-before-super: 1
+    no-useless-constructor: 1
+    no-useless-rename: 1
+    no-var: 1
+    object-shorthand: 1
+    prefer-arrow-callback: 1
+    prefer-const: 1
+    prefer-rest-params: 1
+    prefer-spread: 1
+    prefer-template: 1
+    require-yield: 1
+    rest-spread-spacing: 1
+    symbol-description: 1
+    template-curly-spacing: 1
+    yield-star-spacing: [1, "both"]
+    react/forbid-component-props: [2, { "forbid": ["style"] }]
+    react/forbid-prop-types: [1, { "forbid": ["any"] }]
+    react/no-array-index-key: 1
+    react/no-children-prop: 2
+    react/no-danger: 2
+    react/no-danger-with-children: 2
+    react/no-deprecated: 2
+    react/no-did-mount-set-state: 2
+    react/no-did-update-set-state: 2
+    react/no-direct-mutation-state: 2
+    react/no-find-dom-node: 1
+    react/no-is-mounted: 1
+    react/no-multi-comp: 2
+    react/no-render-return-value: 1
+    react/no-set-state: 0
+    react/no-string-refs: 2
+    react/no-unescaped-entities: 2
+    react/no-unknown-property: 2
+    react/no-unused-prop-types: 1
+    react/prefer-es6-class: [1, always]
+    react/prefer-stateless-function: 0
+    react/prop-types: 2
+    react/react-in-jsx-scope: 1
+    react/require-default-props: 0
+    react/require-optimization: 0
+    react/require-render-return: 2
+    react/self-closing-comp: 1
+    react/sort-comp: [1, { order: [
+                                    'static-methods',
+                                    'lifecycle',
+                                    'everything-else',
+                                    'render'
+                                    ],
+                            groups: {
+                                lifecycle: [
+                                    'displayName',
+                                    'statics',
+                                    'propTypes',
+                                    'defaultProps',
+                                    'constructor',
+                                    'state',
+                                    'getDefaultProps',
+                                    'getInitialState',
+                                    'contextTypes',
+                                    'childContextTypes',
+                                    'mixins',
+                                    'getChildContext',
+                                    'componentWillMount',
+                                    'componentDidMount',
+                                    'componentWillReceiveProps',
+                                    'shouldComponentUpdate',
+                                    'componentWillUpdate',
+                                    'componentDidUpdate',
+                                    'componentWillUnmount'
+                                    ]
+                                }
+                        }]
+    react/sort-prop-types: [1, {
+                                "callbacksLast": true,
+                                "ignoreCase": true,
+                                "requiredFirst": true,
+                                }]
+    react/style-prop-object: 1
+    react/jsx-boolean-value: 1
+    react/jsx-closing-bracket-location: [1, {"selfClosing": "tag-aligned", nonEmpty: "after-props"}]
+    react/jsx-curly-spacing: [2, "always"]
+    react/jsx-equals-spacing: [1, "always"]
+    react/jsx-filename-extension: [1, { "extensions": [".js"] }]
+    react/jsx-first-prop-new-line: [1, "multiline"]
+    react/jsx-handler-names: 0
+    react/jsx-indent: 1
+    react/jsx-indent-props: 1
+    react/jsx-key: 2
+    react/jsx-max-props-per-line: [1, { "maximum": 3 }]
+    react/jsx-no-bind: 0
+    react/jsx-no-comment-textnodes: 1
+    react/jsx-no-duplicate-props: 2
+    react/jsx-no-literals: 0
+    react/jsx-no-target-blank: 2
+    react/jsx-no-undef: 1
+    react/jsx-pascal-case: 2
+    react/jsx-sort-props: [1, {
+                                "callbacksLast": true,
+                                "shorthandFirst": true,
+                                "ignoreCase": true
+                                }]
+    react/jsx-space-before-closing: [1, "always"]
+    react/jsx-tag-spacing: [1, {
+                                "closingSlash": "never",
+                                "beforeSelfClosing": "always",
+                                "afterOpening": "never"
+                                }]
+    react/jsx-uses-react: 1
+    react/jsx-uses-vars: 2
+    react/jsx-wrap-multilines: [1, {declaration: false, assignment: false}]
