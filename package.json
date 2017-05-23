@@ -43,6 +43,7 @@
     "eslint-plugin-jest": "^20.0.3",
     "eslint-plugin-react": "^7.0.0",
     "jsdom": "^10.1.0",
+    "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },

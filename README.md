@@ -22,7 +22,7 @@ or using Yarn:
 
 `yarn add smart-render`
 
-This package depends on [breakpoints-json](https://www.npmjs.com/package/breakpoints-json). It is a JSON formatted breakpoints, which correspond to popular modern devices.
+This package depends on [breakpoints-json](https://www.npmjs.com/package/breakpoints-json). It is JSON formatted breakpoints which correspond to popular modern devices.
 
 `smart-render` also depends on `react` and `react-dom` as peerDependencies. It means that it will not be installed automatically, but you will see a warning if they were not installed previously.
 
